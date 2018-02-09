@@ -1,0 +1,33 @@
+.single-blog {
+        margin-top:8%;
+        margin-bottom:5%;
+
+    .entry-title{
+        margin-top:50px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .single-blog-credits{
+              padding-bottom: 0;
+              color: $light-grey;
+              i{margin-right:5px;}
+             .single-blog-tags{
+                   float:right;
+               a{
+               color:$light-grey;
+               &:hover{
+                 text-decoration: none;
+               }
+             }
+          }
+    }
+    hr{ margin-top: 0;
+        margin-bottom: 50px;}
+}
+
+.single-blog-image{
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}

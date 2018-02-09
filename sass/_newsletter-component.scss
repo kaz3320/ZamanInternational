@@ -1,0 +1,60 @@
+// ====================
+// newsletter component
+// ====================
+main{
+
+  .newsletter{  background-color: $icon_color;
+                margin-bottom: 2em;
+                box-shadow: 1px 1px 5px $grey2;
+                padding: 0;
+
+    .newsletter-content{
+
+      .title{ color:$paragraph_font_color;
+              background-color: $box_color;
+              text-align: center;
+              padding:30px;
+
+              .fa{  color:$icon_color;
+                    font-size: 7em;
+                    text-shadow: 1px 1px 2px $icon_color;
+              }
+              h1{text-shadow: 1px 1px 4px $paragraph_font_color;
+                font-weight: 600;
+                font-size: 40px;
+                //margin:10px;
+                text-align: center;
+            }
+      }//title
+      .triangle{  position:relative;
+
+        i{  position: relative;
+            z-index: 0;
+            line-height: 1.5em;
+            left:-.15em;
+            color: $box_color;
+            font-size: 12em;
+        }
+      }
+      .info{  padding: 70px;
+              color: $box_color;
+        label{
+        }
+        input{
+        }
+        small{
+        }
+      }//info
+      .submit{  color:$box_color;
+                padding: 70px;
+
+        .btn{ background-color: $box_color;
+              color: $paragraph_font_color;
+              font-weight:600;
+              width: 50%;
+              // margin:10px;
+        }
+      }//submit
+    }//newsletter-content
+  }//newsletter
+}//main

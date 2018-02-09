@@ -1,0 +1,99 @@
+.blog-container{
+          padding-left:5%;
+}
+.post-wrapper{ margin: 2% 3%;
+               padding: 3%;
+               background-color: $lighter-grey;
+
+              .post-image{ background: no-repeat center;
+                           background-size: cover;
+                           border-radius: 10px;
+                           height:300px;
+                           box-shadow: 1px 1px 10px grey;
+                         }
+              .post-content{ text-align: left;
+                             padding: 0 50px;
+
+                          .post-title{
+                                     a{  text-decoration: none;
+                                         font-weight: 800;
+                                         color:black;
+                                         font-size: 52px;
+                                         &:hover{ text-decoration: none;
+                                                  color:#215299; }
+                                      }
+                            }
+                          p{ font-size:1.7rem;
+                            }
+                          .btn{ width:100%;
+                                text-align: center;
+
+                              .transparent-bg-btn{ text-align: center;
+                                                   color:#868e96;
+                                                   font-weight:600;
+                                                   border: 2px solid #868e96;
+                                                   padding: 5px;
+                                                   border-radius:5px;
+                                                   &:hover{ text-decoration: none;
+                                                            color:$icon_color;
+                                                            border-color:$icon_color;}
+                                                 }
+                              }
+                          .credits{ position:absolute;
+                                    left:0;
+                                    bottom:0;
+                                    width:100%;
+                                    padding-left:40px;
+                                    text-overflow: ellipsis;
+
+                                  .post-credits{ font-size: 14px;
+                                                 font-style: italic;
+                                                 margin-top: 0;
+                                                 margin-bottom: 0;
+                                                 color: #868e96;
+
+                                              i{ margin-right: 5px;
+                                                 margin-left: 10px;}
+
+                                              .tags{ float:right;
+                                                     font-size: 14px;
+                                                     margin-left: 10px;
+
+                                                    a{ color: #868e96;
+
+                                                       &:hover{ text-decoration: none;
+                                                       }
+                                                    }
+                                                  }
+                                     }
+                                   hr{ margin-top:0;
+                                       margin-bottom:0;
+                                  }
+                          }
+
+                          }
+}
+
+//pagination style
+.pagination{ text-align: center;
+              margin:50px auto;
+
+  .page-numbers{
+          color:#1f1f1f;
+          font-size: 20px;
+          margin: 0 20px;
+          &:hover{
+            text-decoration: none;
+          }
+  }
+  .page-numbers.current{
+          padding: 0 10px;
+          border: 1px solid #1f1f1f;
+          border-radius: 30px;
+          background-color: #1f1f1f;
+          color: #007BE8;
+          font-weight: 600;
+  }
+  .next{float:right;}
+  .prev{ float: left;}
+}

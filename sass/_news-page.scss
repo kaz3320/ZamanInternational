@@ -1,0 +1,95 @@
+$news_headline_height: 100vh / 1.5;
+$news_headline_height_half: $news_headline_height / 2;
+$archive_headline_height:100vh / 1.2;
+
+.news-page-container{
+  margin: 0;
+  padding:0 4%;
+  padding-bottom: 5%;
+  .headline-news{
+    height:$news_headline_height;
+    .large-section{
+        .main-headline{
+          .news-image-wrapper{height:$news_headline_height; }
+        }
+    }
+    .mid-section {
+      .second-headline{
+        .news-image-wrapper{ height: $news_headline_height_half;}
+      }
+      .small-sections{
+        .col-6{
+            .news-image-wrapper{height: $news_headline_height_half;}}
+      }
+    }
+  }
+}
+
+.news-image-wrapper{ padding: 20px;
+                     background-repeat: no-repeat;
+                     background-size: cover;
+                     background-position: center;
+                     border: 3px solid white;
+                     border-radius: 10px;
+
+            .post-title{ width:100%;
+                         padding:2%;
+
+                      a { color:white;
+                          opacity:.7;
+                          text-shadow: 1px 1px 5px black;
+                        &:hover{ text-decoration: none;}
+                        }
+        }
+            .post-credits{ color:white;
+                           opacity:.7;
+                           text-shadow: 1px 1px 7px black;}
+}
+.large-section{
+  .post-title{
+    font-size:55px;
+  }
+}
+.mid-section{
+  .second-headline{
+    .post-title{
+      font-size:45px;
+    }
+  }
+  .small-sections{
+    .col-6{
+      .post-title{
+        font-size: 30px;
+      }
+    }
+  }
+}
+.post-title-group{
+  .post-title{
+    a{
+      &:hover{
+          color:#3E8CD6;
+      }
+    }
+  }
+}
+
+.archive-news{
+  height:$archive_headline_height;
+  .news-image-wrapper{ height: $archive_headline_height /2;}
+  .post.title{font-size:35px;}
+}
+.small-news-archive{
+  .news-image-wrapper{height: $archive_headline_height /4;}
+  .post-title{
+    font-size: 25px;
+  }
+}
+.news-sidebar-section{
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.7);
+  border: 3px solid white;
+
+}
